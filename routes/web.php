@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::any ('login', [ 'as' => 'login', 'uses' => function() {
+    return response()->json(['unauthorized API. set Authorization header']);
+}]);
 Route::get('/', function () {
     return view('welcome');
 });

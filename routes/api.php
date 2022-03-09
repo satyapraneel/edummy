@@ -19,7 +19,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::any("v1/profiles", [MemberLookupController::class, 'lookup']);
+Route::any('/login', function () {
+    return 'unauthorized API';
+});
+
 Route::middleware('auth:api')->group(function () {
-    // Route::any("v1/profiles", [MemberLookupController::class, 'lookup']);
+    Route::any("infrastructure/scripts/GetProfileDetails/invoke", [MemberLookupController::class, 'lookup']);
 });

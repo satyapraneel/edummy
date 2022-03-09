@@ -9,7 +9,6 @@ class MemberLookupController extends Controller
 {
     public function lookup()
     {
-        return User::paginate(10);
         return $this->readJsonFile('memberLookupData.json');
     }
 }
