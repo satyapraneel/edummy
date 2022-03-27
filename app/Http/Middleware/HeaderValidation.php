@@ -25,7 +25,7 @@ class HeaderValidation
             "Program-Code" => "SHUKRAN",
             "Source-Application" => "SHUKRANDIGITAL",
             "Accept-Language" => "en-US",
-            "content-type" => "application/json"
+            "Content-Type" => "application/json"
         ];
         $throwError = false;
         foreach($headerLists as $headerKey => $headerValue) {
