@@ -17,7 +17,8 @@ class HeaderValidation
      */
     public function handle(Request $request, Closure $next)
     {
-        // 
+        info('Header', $request->headers->all());
+        info('BODY', $request->all());
         $token = $request->headers->get('Authorization');
         $token = str_replace("OAuth","Bearer",$token);
         $request->headers->set('Authorization', $token);
@@ -30,6 +31,7 @@ class HeaderValidation
         $throwError = false;
         foreach($headerLists as $headerKey => $headerValue) {
             if($request->headers->get($headerKey) != $headerValue) {
+                info($headerValue);
                 $throwError = true;
                 break;
             

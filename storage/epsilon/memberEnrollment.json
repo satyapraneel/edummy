@@ -1,0 +1,52 @@
+{
+    "ProfileId": "e7114135-4c55-4af6-bd91-fddf768a4df8",
+    "FirstName": "LMG",
+    "LastName": "Group",
+    "City": "Muharraq",
+    "Gender": "M",
+    "BirthDate": "1989-06-05",
+    "Prefix": "Mr.",
+    "Addresses": [
+        {
+            "PostalCode": "75080",
+            "City": "Muharraq",
+            "CountryCode": "Bahrain",
+            "StateCode": "Bahrain",
+            "AddressLine1": "123 Mushtaq ROAD",
+            "AddressLine2": "#3333, 5th Cross",
+            "LocationCode": "H"
+        }
+    ],
+    "Emails": [
+        {
+            "EmailAddress": "abdulla2021@epsilon.com"
+        }
+    ],
+    "Phones": [
+        {
+            "PhoneNumber": "949979679700"
+        }
+    ],
+    "SourceCode": "ORION",
+    "EnrollmentStoreCode": "393393",
+    "LanguageCode": "Arabic",
+    "JoinDate": "2022-02-22",
+    "CardNumber": "1100000094949446",
+    "EnrollChannelCode": "WEB",
+    "JsonExternalData": {
+        "CashierID": "3939339",
+        "EnrollmentInvoiceNumber": "INV3838SH_9484",
+        "LandLineNumber": "0803333390",
+        "Nationality": "India",
+        "PH_OTPVerified": "Y",
+        "ActivatedIn": "0",
+        "ActivatedLanguage": "1",
+        "ActivationDate": "2022-02-22",
+        "Consent": {
+            "ProvidedDate": "",
+            "Source": "",
+            "Status": "",
+            "Segment": ""
+        }
+    }
+}

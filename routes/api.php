@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\MemberLookupController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,4 +26,6 @@ Route::any('/login', function () {
 
 Route::middleware('auth:api')->group(function () {
     Route::any("infrastructure/scripts/GetProfileDetails/invoke", [MemberLookupController::class, 'lookup']);
+    Route::post("infrastructure/scripts/GetTransactionsByProfileId/invoke", [InvoiceController::class, 'getTransactionsByProfileId']);
+    Route::post("infrastructure/scripts/ProcessEcommDetails/invoke", [MemberLookupController::class, "changeLinkStatus"]);
 });
