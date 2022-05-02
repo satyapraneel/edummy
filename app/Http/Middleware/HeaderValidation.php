@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Http;
 
 class HeaderValidation
 {
@@ -17,6 +18,11 @@ class HeaderValidation
      */
     public function handle(Request $request, Closure $next)
     {
+        if(str_contains($request->url(), "authorization/tokens")) {
+            info("coming here");
+            $response = Http::asForm()->post('http://dev.epsilon.com/api/v1/authorization/token', $request->all());
+            return $response->json();
+        }
         info('Header', $request->headers->all());
         info('BODY', $request->all());
         $token = $request->headers->get('Authorization');

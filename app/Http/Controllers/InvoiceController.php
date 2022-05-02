@@ -9,4 +9,9 @@ class InvoiceController extends Controller
     {
         return $this->readJsonFile('getTransactionsList.json');
     }
+
+    public function getInvoiceDetails()
+    {
+        return $this->readJsonFile('getInvoiceDetails.json');
+    }
 }
