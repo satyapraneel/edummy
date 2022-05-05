@@ -7,11 +7,18 @@ class InvoiceController extends Controller
 {
     public function getTransactionsByProfileId()
     {
-        return $this->readJsonFile('getTransactionsList.json');
+        $data = $this->readJsonFile('getTransactionsList.json', false);
+        foreach($data['Transactions'] as &$transactions) {
+            $transactions['TransactionNumber'] = 'TXN-316'.rand(1000, 9999);
+        }
+        
+        return $data;
     }
 
     public function getInvoiceDetails()
     {
-        return $this->readJsonFile('getInvoiceDetails.json');
+        $data = $this->readJsonFile('getInvoiceDetails.json', false);
+        $data['TransactionNumber'] = 'TXN-316'.rand(1000, 9999);
+        return $data;
     }
 }

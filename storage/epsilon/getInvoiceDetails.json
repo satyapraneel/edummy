@@ -88,7 +88,7 @@
           "JsonExternalData": {
              "AccruedPoints":"70",
              "SaleFlag":"Y",
-              "ProudctName":"LMG Basic Accrual"
+              "ProductName":"LMG Basic Accrual"
           }
        },
        {
@@ -121,7 +121,7 @@
           "JsonExternalData":{
              "AccruedPoints":"100",
              "SaleFlag":"N",
-             "ProudctName":"LMG Basic Accrual"
+             "ProductName":"LMG Basic Accrual"
           }
        },
        {
@@ -154,7 +154,7 @@
           "JsonExternalData":{
              "AccruedPoints":"90",
               "SaleFlag":"Y",
-             "ProudctName":"LMG Basic Accrual"
+             "ProductName":"LMG Basic Accrual"
           }
        },
        {
@@ -162,7 +162,7 @@
           "LineNumber":4,
           "ItemNumber":"51511",
           "GrossAmount":100,
-          "NetAmount":0,
+          "NetAmount":10,
           "Quantity":1,
           "TaxAmount":0,
           "EligibleRevenueAmount":0,
@@ -187,7 +187,7 @@
           "JsonExternalData": {
              "AccruedPoints":"80",
              "SaleFlag":"Y",
-             "ProudctName":"LMG Basic Accrual"
+             "ProductName":"LMG Basic Accrual"
           }
        }
     ],
