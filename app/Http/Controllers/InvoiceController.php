@@ -21,4 +21,10 @@ class InvoiceController extends Controller
         $data['TransactionNumber'] = 'TXN-316'.rand(1000, 9999);
         return $data;
     }
+
+    public function getCouponDetails()
+    {
+        $data = $this->readJsonFile('getCouponDetails.json', false);    
+        return $data;
+    }
 }
