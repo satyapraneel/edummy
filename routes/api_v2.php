@@ -8,5 +8,5 @@ Route::middleware('auth:api')->group(function () {
     Route::any("infrastructure/scripts/GetProfileDetails/invoke", [MemberLookupController::class, 'lookup']);
     
     Route::post("profiles", [MemberLookupController::class, 'memberEnrollment']);
-    Route::post("transaction/rawtransactions/{TransactionId}", [InvoiceController::class, 'getInvoiceDetails']);
+    Route::get("transaction/rawtransactions/{TransactionId}", [InvoiceController::class, 'getInvoiceDetails']);
 });
