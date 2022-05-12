@@ -1,0 +1,45 @@
+{
+    "PageNumber":1,
+    "TotalTransactionCount":120,
+    "Transactions":[
+       {
+          "Amount":"200",
+          "BillingDate":"2022-03-31T12:33:18.707505Z",
+          "Concept":"",
+          "TotalPointsEarned":"200",
+          "BillingStatus":"Ready to be billed",
+          "PartnerFlg":"Y",
+          "TransactionNumber":"TXN-111111",
+          "TransactionId":"3703f6f2-72e3-4190-83f6-8cedb366e190",
+          "TransactionDate":"2022-03-20T12:33:18.707505Z",
+          "TransactionType":"Accraul",
+          "ProductDescription":"Bookings_AGODA",
+          "StoreName":"AGODA",
+          "Country":"Kuwait",
+          "ProfileId":"3502f6f2-72e3-4190-83f6-8cedb366e190",
+          "MemberName":"MUNEERA SAAD AL-SAEED",
+          "Points":"200",
+          "ProductName":"Bookings_AGODA"
+       },
+       {
+          "Amount":"",
+          "BillingDate":"2022-04-04T12:33:18.707505Z",
+          "Concept":"",
+          "TotalPointsEarned":"500",
+          "BillingStatus":"Ready to be billed",
+          "PartnerFlg":"Y",
+          "TransactionNumber":"TXN-9499444",
+          "TransactionId":"0492f6f2-72e3-4190-83f6-8cedb366e190",
+          "TransactionDate":"2022-03-25T12:33:18.707505Z",
+          "TransactionType":"Accrual",
+          "ProductDescription":"Bookings_AGODA",
+          "StoreName":"AGODA",
+          "Country":"Kuwait",
+          "ProfileId":"3502f6f2-72e3-4190-83f6-8cedb366e190",
+          "MemberName":"MUNEERA SAAD AL-SAEED",
+          "Points":"500",
+          "ProductName":"Bookings_AGODA"
+       }
+    ]
+ }
+ 

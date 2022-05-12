@@ -31,6 +31,7 @@ Route::middleware('auth:api')->group(function () {
     Route::post("infrastructure/scripts/GetTransactionsByProfileId/invoke", [InvoiceController::class, 'getTransactionsByProfileId']);
     Route::post("infrastructure/scripts/ProcessEcommDetails/invoke", [MemberLookupController::class, "changeLinkStatus"]);
     Route::post("infrastructure/scripts/GetCouponDetails/invoke", [InvoiceController::class, 'getCouponDetails']);
+    Route::post("infrastructure/scripts/GetPartnerTransactions/invoke", [InvoiceController::class, 'getPartnerTransactions']);
 });
 Route::post('/authorization/tokens', function(Request $request) {
     $response = Http::asForm()->post('http://dev.epsilon.com/api/v1/authorization/token', $request->all());

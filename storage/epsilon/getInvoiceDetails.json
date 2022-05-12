@@ -201,6 +201,11 @@
     "UpdateUser":"SUPER_USER",
     "UpdateDate":"2022-03-16T12:05:59.22079Z",
     "JsonExternalData": {
+      "InvoiceTotalQty": "3",
+      "IsCoD": "Y",
+      "CrossBorderFlag": "N",
+      "Territory": "United Arab Emirates",
+      "City": "Dubai",
        "StoreName":"LMG_Store",
          "RedeemedPoints":500
     }
