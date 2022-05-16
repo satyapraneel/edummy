@@ -27,4 +27,10 @@ class InvoiceController extends Controller
         $data = $this->readJsonFile('getCouponDetails.json', false);    
         return $data;
     }
+
+    public function getPartnerTransactions()
+    {
+        $data = $this->readJsonFile('getPartnerTransactions.json', false);    
+        return $data;
+    }
 }
