@@ -33,4 +33,13 @@ class PartnerConversionController extends Controller
             "Message" => "Membership account updated with Smile Information"
         ]);
     }
+
+    public function convertShukransToNeqaty() {
+        return response()->json([
+            // "ReferenceNumber" => "1-129".rand(1000, 9999),
+            "ReferenceNumber" => "28858 05143 10609 ".rand(10000, 99999),
+            "Result" =>  true,
+            "Message" => "Transfer Successful"
+        ]);
+    }
 }

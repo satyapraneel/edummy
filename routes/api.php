@@ -36,6 +36,7 @@ Route::middleware('auth:api')->group(function () {
     Route::post("infrastructure/scripts/PartnerTransaction/invoke", [PartnerConversionController::class, 'createTransaction']);
     Route::post("infrastructure/scripts/PartnerLinkUnlink/invoke", [PartnerConversionController::class, 'linkAccount']);
     Route::post("infrastructure/scripts/GetPartnerTransactions/invoke", [InvoiceController::class, 'getPartnerTransactions']);
+    Route::post("infrastructure/scripts/NeqatyPointConversion/invoke", [PartnerConversionController::class, 'convertShukransToNeqaty']);
 });
 Route::post('/authorization/tokens', function(Request $request) {
     $response = Http::asForm()->post('http://dev.epsilon.com/api/v1/authorization/token', $request->all());
