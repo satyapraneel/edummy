@@ -12,7 +12,7 @@ class PartnerConversionController extends Controller
     public function cancelTransaction(CancelTransactionRequest $request) {
         return response()->json([
             "UniqueId" => "1-129".rand(1000, 9999),
-            "Result" =>  true,
+            "Result" =>  "True",
             "Message" => "Transaction Cancelled Successfully"
         ]);
     }
@@ -20,7 +20,7 @@ class PartnerConversionController extends Controller
     public function createTransaction(CreateTransactionRequest $request) {
         return response()->json([
             "transaction_number" => "1-129947899". rand(1000, 9999),
-            "Result" =>  true,
+            "Result" =>  "True",
             "Message" => "Transfer Successful",
             "transaction_id" =>  "1-I2L6E6U".rand(1000, 9999)
         ]);
