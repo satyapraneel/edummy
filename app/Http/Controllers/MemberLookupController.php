@@ -27,4 +27,12 @@ class MemberLookupController extends Controller
         ];
             
     }
+
+    public function updateQRConsent() {
+        return response()->json([
+            "ProfileId" => "3502f6f2-72e3-4190-83f6-8cedb366e190",
+            "VoucherNumber" => "288580514310609".rand(10000, 99999),
+            "Result" =>  true,
+        ]);
+    }
 }

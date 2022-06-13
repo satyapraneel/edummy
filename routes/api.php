@@ -39,6 +39,7 @@ Route::middleware('auth:api')->group(function () {
     Route::post("infrastructure/scripts/NeqatyPointConversion/invoke", [PartnerConversionController::class, 'convertShukransToNeqaty']);
     Route::post("infrastructure/scripts/RetroTransactionClaimHistory/invoke", [InvoiceController::class, 'getRetroClaimHistory']);
     Route::post("infrastructure/scripts/RetroTransactionClaim/invoke", [InvoiceController::class, 'requestForRetroClaim']);
+    Route::post("infrastructure/scripts/InStoreLMGBenefit/invoke", [MemberLookupController::class, 'updateQRConsent']);
 });
 Route::post('/authorization/tokens', function(Request $request) {
     $response = Http::asForm()->post('http://dev.epsilon.com/api/v1/authorization/token', $request->all());
