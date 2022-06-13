@@ -1,0 +1,25 @@
+[{
+    "TransactionDate": "2022-03-07T06:00:00Z",
+    "TransactionNumber": "Txn-9993933",
+    "CardNumber": "1700000003984275",
+    "ProfileId": "3502f6f2-72e3-4190-83f6-8cedb366e190",
+    "RetroClaimComments": "",
+    "RetroClaimDate": "2022-03-10T06:00:00Z",
+    "RetroTransactionNumber": "220591027192",
+    "RetroStatus": "In Progress",
+    "StoreType": "ORPOS",
+    "POSErrorCode": ""
+},
+{
+    "TransactionDate": "2022-03-05T06:00:00Z",
+    "TransactionNumber": "Txn-9993934",
+    "CardNumber": "1700000003984275",
+    "ProfileId": "3502f6f2-72e3-4190-83f6-8cedb366e190",
+    "RetroClaimComments": "",
+    "RetroClaimDate": "2022-03-11T06:00:00Z",
+    "RetroTransactionNumber": "220591027193",
+    "RetroStatus": "In Progress",
+    "StoreType": "ORPOS",
+    "POSErrorCode": ""
+}
+]

@@ -1,0 +1,9 @@
+{
+	"CardNumber": "1600000065687093",
+	"TransactionDate": "2022-03-05T06:00:00Z",
+	"RetroTransactionNumber": "Txn-9993933",
+	"RetroClaimDate": "2022-03-06T06:00:00Z",
+	"POSType": "ORPOS",
+	"Message": "The retro claim has been registered successfully.",
+	"Result": true
+}

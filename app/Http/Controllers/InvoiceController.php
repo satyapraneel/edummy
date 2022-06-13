@@ -33,4 +33,16 @@ class InvoiceController extends Controller
         $data = $this->readJsonFile('getPartnerTransactions.json', false);    
         return $data;
     }
+
+    public function getRetroClaimHistory()
+    {
+        $data = $this->readJsonFile('getRetroClaimHistory.json', false);    
+        return $data;
+    }
+
+    public function requestForRetroClaim()
+    {
+        $data = $this->readJsonFile('requestForRetroClaim.json', false);    
+        return $data;
+    }
 }
